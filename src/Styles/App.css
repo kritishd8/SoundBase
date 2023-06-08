@@ -1,0 +1,133 @@
+/* App.css */
+
+body {
+  background-color: #181818;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input[type="text"] {
+  background-color: #212121;
+  display: flex;
+  margin-bottom: 20px;
+  width: 300px;
+  align-self: center;
+  height: 70px;
+  padding: 0 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #fff;
+  border: 6px solid #181818;
+  outline: 2px solid transparent;
+  transition: 250ms ease;
+}
+
+input[type="text"]::placeholder {
+  color: #888;
+}
+
+input[type="text"]:focus {
+  outline: 2px solid #1db954;
+  border: 6px solid #181818;
+}
+
+button {
+  background-color: hsl(0, 0%, 13%);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  transition: 250ms linear;
+  outline: 0px solid transparent;
+  border: 0px solid transparent;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 16%);
+  outline: 2px solid #1db954;
+  border: 6px solid #181818;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: hsl(0, 0%, 13%);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: 250ms linear;
+  outline: 0px solid transparent;
+  border: 0px solid transparent;
+}
+
+.card:hover{
+  background-color: hsl(0, 0%, 16%);
+  outline: 2px solid #1db954;
+  border: 6px solid #181818;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+a {
+  transition: 150ms linear;
+}
+
+a.name {
+  font-size: 1rem;
+  color: #eee;
+  margin-bottom: 10px;
+}
+
+a.name:hover,a.artist:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+a.artist {
+  font-size: .8rem;
+  color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
